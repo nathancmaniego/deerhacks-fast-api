@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://neondb_owner:npg_rMG9OqSJX4zj@ep-solitary-hill-a82z4uea-pooler.eastus2.azure.neon.tech/neondb?sslmode=require")
+DATABASE_URL = "postgresql://neondb_owner:npg_rMG9OqSJX4zj@ep-solitary-hill-a82z4uea-pooler.eastus2.azure.neon.tech/neondb?sslmode=require"
 
 # Database Setup
 engine = create_engine(DATABASE_URL)
